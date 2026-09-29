@@ -5,3 +5,10 @@ function confirmaRegistre(){
     document.getElementById("formDiv").innerHTML = "<p class=\"important\">Registered successfully</p>"
 
 }
+
+function validateForm() {
+    // here we validate the fields
+    return true;
+
+}
+

@@ -4,3 +4,34 @@ p.important{
     font-size: 30px;
     background-color: aqua;
 }
+
+
+h1{
+    color: darkblue;
+}
+
+h1,h3 {
+    font-style: italic;
+}
+
+section.statistics header h3 {
+    color: red
+
+} 
+
+header p {
+    font-family: 'Courier New';
+}
+
+.fancy {
+    font-family:'Times New Roman';
+}
+
+header.fancy{
+    color:magenta;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
