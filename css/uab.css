@@ -44,3 +44,32 @@ ul li{ /*perquè les “bullets” quedin alineades amb el text*/
 }
 
 /* completa */
+#container{
+    display: grid;
+    grid-template-areas:
+    header header
+    degreesList register
+    statistics statistics
+    footer footer;
+}
+
+#header
+{
+    grid-area: header;
+}
+#degreesList
+{
+    grid-area: degreesList;
+}
+#register
+{
+    grid-area: register;
+}
+#statistics
+{
+    grid-area: statistics;
+}
+#footer
+{
+    grid-area: footer;
+}
