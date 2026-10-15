@@ -2,18 +2,11 @@
 <html>
     <head>
         <!-- TODO0: Add metadata and the title -->
-         <meta charset="UTF-8">  
-         <title> UAB/Enginyeria </title>
     </head>
     <body>
         <!-- SECCIÓ 1 - Capçalera -->
         <header>
         <!-- TODO1: Add the UAB logo and the school's name. The logo is a link to http://www.uab.cat -->
-            <a href="http://www.uab.cat" target="_blank">
-                <img src="img/uab.png" alt="Logo UAB" width="200px"> </img>
-            </a>
-            <p>Benvinguts a l'Escola d'Enginyeria de la UAB</p>
-            <hr />
         </header>
         <!-- SECCIÓ 2 - Llistat dels diferents graus que ofereix l’escola d’enginyeria -->
         <section>
@@ -22,8 +15,6 @@
             </header>
             <ul>
                 <!-- TODO2: List the available degrees and their specialities (mentions) -->
-                 <li><a href="https://www.uab.cat/enginyeria">Enginyeria Informàtica</a></li>
-
                 <!-- Link the Menció de TI to mencions/TI/index.html -->
             </ul>
         </section>
@@ -35,15 +26,6 @@
             <p> Si us plau facilita'ns les teves dades </p>
             <form method="post" action="">
                 <!-- TODO3: Implement the registration form -->
-                 <label for="nom">Nom complet:</label> <input type="text" id="nom" name="nom"><br><br>
-                 <label for="password">Password:</label> <input type="password" id="clau" name="clau"><br><br>
-                 <label for="grau">Grau:</label>
-
-                 select id="grau" name="grau">
-                    <option value="1">Enginyeria Informàtica</option>
-                    <option value="2">Enginyeria de Sistemes de Telecomunicació</option>
-                    <option value="3">Enginyeria Electrònica de Telecomunicació</option>
-                    <option value="4">Enginyeria Quimica</option>
             </form>
             <hr />
         </section>
@@ -55,17 +37,12 @@
             
             <!-- TODO4: Implement the statistics table -->
             <table border="1">
-                <tr> <th colspan="2"> Escola d'Enginyeria </th> <th colspan="2"> Ciències </th> </tr>
-                <tr> <td> Enginyeria Informàtica </td> <td> 300 </td> <td> Matemàtiques </td> <td> 200 </td> </tr>
-                <tr> <td> Enginyeria de Sistemes de Telecomunicació </td> <td> 150 </td> <td rowspan="2"> Física </td> <td rowspan="2"> 100 </td> </tr>
             </table>
             
         </section>
         <!-- SECCIÓ 5 - Peu de pàgina -->
         <footer>
             <!-- TODO5: Add image and copyright information. -->
-             <img src="img/campus-e.png" width="100px"> </img>
-            <p>&copy; Universitat Autònoma de Barcelona. Campus d'Excel·lència.</p>
         </footer>
     </body>
 </html>
