@@ -44,3 +44,62 @@ ul li{ /*perquè les “bullets” quedin alineades amb el text*/
 }
 
 /* completa */
+
+
+#container {
+    background-color: lightgray;
+    padding: 5px;
+    column-gap: 5px;
+    row-gap: 5px;
+    display: grid;
+
+
+    grid-template-areas:
+    'capçalera capçalera'
+    'llistat formulari'
+    'estadistiques estadistiques'
+    'peu peu'
+    
+}
+
+#container header, #container section, #container footer {
+    background-color: white;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#container footer{
+    text-align: right;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width:600px)
+{
+    #container {
+        display:flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+}
+
+#campus-e {
+    animation-name: rotacióAugment;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+
+}
+
+@keyframes rotacióAugment {
+    0% { width: 0px;   }
+
+    100% { width: 100px;
+           transform: rotate(360deg);}
+}

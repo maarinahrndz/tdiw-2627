@@ -4,20 +4,22 @@
         <meta charset="utf-8"/> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> UAB/Enginyeria </title> 
-        <link rel="stylesheet" type="text/css" href="css/uab.css">
-        <script src="js/funcions.js"></script>
+        <link rel="stylesheet" href="css/uab.css">
+        <script type="text/javascript" src="js/funcions.js"> </script>
+
     </head>
     <body>
         <!-- completa -->
+        <div id="container">
             <!-- SECCIÓ 1 - Capçalera -->
-            <header> <!-- completa -->
+            <header style="grid-area: capçalera"> <!-- completa -->
                 <a href="http://www.uab.cat" target="_blank"><img src="img/uab.png" width="200px"></img></a>
                 <h1>Escola d'Enginyeria</h1>
                 <p>Benvinguts a l'Escola d'Enginyeria de la UAB</p>
                 <hr/>
             </header>
             <!-- SECCIÓ 2 - Llistat dels diferents graus que ofereix l’escola d’enginyeria -->
-            <section> <!-- completa -->
+            <section style="grid-area:llistat"> <!-- completa -->
                 <header>
                     <h3>Graus disponibles: </h3>
                 </header>
@@ -36,7 +38,7 @@
                 </ul>
             </section>
             <!-- SECCIÓ 3 - Formulari de registre -->
-            <section> <!-- completa -->
+            <section style="grid-area: formulari"><!-- completa -->
                 <header class="fancy">
                     <h3>Registra't com a alumne en un grau: </h3>
                 </header>
@@ -46,7 +48,7 @@
                         Nom complet: <input type="text" name="nom" /><br />
                         Password: <input type="password" name="clau" /><br />
                         Grau:
-                        <select name="grau" id="graus"> <!-- completa -->
+                        <select name="grau" id="graus" onchange="carregaMencions()"> <!-- completa -->
                             <option value="1">Enginyeria Informàtica</option>
                             <option value="2">Enginyeria de Sistemes de Telecomunicació</option>
                             <option value="3">Enginyeria Electrònica de Telecomunicació</option>
@@ -66,7 +68,7 @@
                 <hr />
             </section>
             <!-- SECCIÓ 4 -  Estadístiques de matriculació per grau -->
-            <section class="statistics"> <!-- completa -->
+            <section class="statistics" style="grid-area: estadistiques"><!-- completa -->
                 <header>
                     <h3>Estadístiques de matriculació per graus</h3>
                 </header>
@@ -80,9 +82,10 @@
                 </table>
             </section>
             <!-- SECCIÓ 5 - Peu de pàgina -->
-            <footer> <!-- completa -->
+            <footer style="grid-area: peu"> <!-- completa -->
                 <img src="img/campus-e.png" width="100px" id="campus-e" />
                 <p>&copy;Universitat Autònoma de Barcelona. Campus d'Excel·lència</p>
-            </footer>
+            </footer> 
+        </div>
     </body>
 </html>
